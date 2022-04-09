@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="{{asset('img/logo.png')}}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title','Angkuts')</title>
+    <title>@yield('title','Laundry.in')</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -57,11 +57,11 @@
                 </div>
             </nav>
 
-    <div class="sidebar" data-color="green" data-image="{{asset('img/sidebar-5.jpg')}}">
+    <div class="sidebar" data-color="orange" data-image="{{asset('img/sidebar-5.jpg')}}">
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="http://www.creative-tim.com" class="simple-text">
-                    Angkuts
+                    Laundry.in
                 </a>
             </div>
 
@@ -110,13 +110,13 @@
                     <li>
                         <a href="{{ route('admin') }}">
                             <i class="pe-7s-user"></i>
-                            <p>Data TPS</p>
+                            <p>Data Outlet Laundry</p>
                         </a>
                     </li>
                     <li class="nav-item {{ Route::currentRouteName('admin-histori') == 'admin-histori'  ? 'active' : '' }}">
                         <a href="{{ route('admin-histori') }}">
                             <i class="pe-7s-note2"></i>
-                            <p>Histori Penjemputan</p>
+                            <p>Histori Transaksi</p>
                         </a>
                     </li>
                 @endif
@@ -141,7 +141,7 @@
             </ul>
         </nav>
         <p class="copyright pull-right">
-            &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Angkuts</a>, no takut siap angkut
+            &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Laundry.in</a>, laundry no capek
         </p>
     </div>
 </footer>
@@ -174,10 +174,10 @@
 
         $.notify({
             icon: 'pe-7s-gift',
-            message: "Welcome to <b>Angkuts</b> - Sistem Penjemputan Sampah."
+            message: "Welcome to <b>Laundry.in</b> - Sistem Manajemen Laundry"
 
         },{
-            type: 'info',
+            type: 'warning',
             timer: 4000
         });
 

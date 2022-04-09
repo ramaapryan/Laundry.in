@@ -7,7 +7,7 @@
                     <div class="col-md-12">
                         {{-- <div class="card"> --}}
                             <div class="header">
-                                <h4 class="title">Histori Penjemputan Sampah</h4>
+                                <h4 class="title">Histori Transaksi Laundry</h4>
                             </div>
                             <div class="clearfix"></div>
                             <div class="content table-responsive table-full-width">
@@ -16,9 +16,9 @@
                                         <th>No</th>
                                     	<th>Nama</th>
                                     	<th>Alamat</th>
-                                    	<th>Berat Sampah</th>
+                                    	<th>Berat Laundry</th>
                                     	<th>Tanggal Jemput</th>
-                                    	<th>TPS</th>
+                                    	<th>Outlet Laundry</th>
                                     	<th>Status</th>
                                     </thead>
                                     <tbody>
@@ -28,7 +28,7 @@
                                         	<td>{{++$no}}</td>
                                         	<td>{{$data->nama}}</td>
                                         	<td>{{$data->alamat}}</td>
-                                        	<td>{{$data->berat_sampah}}</td>
+                                        	<td>{{$data->berat_sampah}} kg</td>
                                         	<td>{{$data->tanggal_jemput}}</td>
                                         	<td>{{$data->nama_tps}}</td>
                                             @if ($data->status == 'sedang diproses')

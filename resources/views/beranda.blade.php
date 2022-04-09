@@ -12,7 +12,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <b><h2 style="text-align:center">SELAMAT DATANG DI WEB ANGKUTS</h2></b>
+                        <b><h2 style="text-align:center">SELAMAT DATANG DI WEB LAUNDRY.IN</h2></b>
                         <br>
                         <img style="margin-left:35%" src="{{asset('img/1.jpg')}}" class="img-fluid" width="315px" alt="ini gambar login">
                         <br>

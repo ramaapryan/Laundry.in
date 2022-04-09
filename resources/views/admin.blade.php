@@ -8,7 +8,7 @@
                         <div class="card">
 
                             <div class="header">
-                                <h4 class="title">Data TPS</h4>
+                                <h4 class="title">Data Outlet Laundry</h4>
                                 @if(session()->has('message'))
                                 <div class="alert alert-info">
                                     {{session()->get('message')}}
@@ -24,7 +24,7 @@
                                 <table class="table table-hover table-striped">
                                     <thead>
                                         <th>No</th>
-                                    	<th>Nama TPS</th>
+                                    	<th>Nama Outlet Laundry</th>
                                     	<th>Alamat</th>
                                     	<th colspan="2" style="text-align: center">Aksi</th>
                                     </thead>

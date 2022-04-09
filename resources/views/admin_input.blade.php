@@ -7,7 +7,7 @@
                     <div class="col-md-8">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Tambah Data TPS</h4>
+                                <h4 class="title">Tambah Data Outlet Laundry</h4>
                             </div>
                             <div class="content">
                                 <form action="{{url('/proses-validasi-admin')}}" method="POST">
@@ -15,8 +15,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label>Nama TPS</label>
-                                                <input type="text" class="form-control" id="nama_tps" name="nama_tps"placeholder="TPS Sawojajar">
+                                                <label>Nama Outlet Laundry</label>
+                                                <input type="text" class="form-control" id="nama_tps" name="nama_tps"placeholder="Testing Laundry">
                                                 @error('nama_tps')
                                                 <div class="text-danger">{{$message}}</div>
                                                 @enderror
@@ -39,7 +39,7 @@
                                         @enderror
                                     </div>
 
-                                    <button type="submit" class="btn btn-success btn-fill pull-right">Kirim</button>
+                                    <button type="submit" class="btn btn-warning btn-fill pull-right">Kirim</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
