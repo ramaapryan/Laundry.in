@@ -17,7 +17,7 @@
                                 <th>No</th>
                                 <th>Nama</th>
                                 <th>Alamat</th>
-                                <th>Berat Sampah</th>
+                                <th>Berat Laundry</th>
                                 <th>Tanggal Jemput</th>
                                 <th>TPS</th>
                                 <th colspan="2">Status</th>
@@ -61,7 +61,7 @@
     } else {
             x.style.display = "none";
     }
-      document.getElementById("demo"+no).innerHTML = "<span class='label label-danger'>Ditolak</span>";
+      document.getElementById("demo"+no).innerHTML = "<span class='label label-danger'>Pickup</span>";
       // Create a request variable and assign a new XMLHttpRequest object to it.
         var request = new XMLHttpRequest()
 
