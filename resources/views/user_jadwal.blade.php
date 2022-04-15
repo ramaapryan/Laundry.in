@@ -20,6 +20,7 @@
                                     	<th>Berat Sampah</th>
                                     	<th>Tanggal Jemput</th>
                                     	<th>TPS</th>
+                                        <th>Total Harga</th>
                                     	<th>Status</th>
                                     </thead>
                                     <tbody>
