@@ -32,6 +32,7 @@
                                         	<td>{{$data->berat_sampah}} kg</td>
                                         	<td>{{$data->tanggal_jemput}}</td>
                                         	<td>{{$data->nama_tps}}</td>
+                                            <td>{{$data->berat_sampah*5000}}</td>
                                             @if ($data->status == 'sedang diproses')
                                         	<td><span class="label label-default">Sedang diproses</span></td>
                                             @elseif ($data->status == 'selesai')
