@@ -7,7 +7,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Jadwal Penjemputan Sampah</h4>
+                                <h4 class="title">Jadwal Penjemputan Laundry</h4>
                                 <a href="{{ route('user-input') }}" type="submit" class="btn btn-success btn-fill pull-right">Atur Jadwal</a>
                             </div>
                             <div class="clearfix"></div>
@@ -17,9 +17,9 @@
                                         <th>No</th>
                                     	<th>Nama</th>
                                     	<th>Alamat</th>
-                                    	<th>Berat Sampah</th>
+                                    	<th>Berat Laundry</th>
                                     	<th>Tanggal Jemput</th>
-                                    	<th>TPS</th>
+                                    	<th>Outlet Laundry</th>
                                         <th>Total Harga</th>
                                         <th>Satuan</th>
                                         <th>Service</th>

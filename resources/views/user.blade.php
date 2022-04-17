@@ -6,7 +6,7 @@
                     <div class="col-md-4" style="margin-left:30px; margin-top: 10px">
                         <div class="card ">
                             <div class="header">
-                                <img src="{{asset('img/tps2.jpg')}}" height="210"width="300px">
+                                <img src="{{asset('img/laundry.jpeg')}}" height="210"width="350px">
                             </div>
                             <div class="content">
                                 <div class="footer">

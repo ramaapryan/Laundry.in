@@ -16,9 +16,9 @@
                                         <th>No</th>
                                     	<th>Nama</th>
                                     	<th>Alamat</th>
-                                    	<th>Berat Sampah</th>
+                                    	<th>Berat Laundry</th>
                                     	<th>Tanggal Jemput</th>
-                                    	<th>TPS</th>
+                                    	<th>Outlet Laundry</th>
                                         <th>Total Harga</th>
                                         <th>Satuan</th>
                                         <th>Service</th>

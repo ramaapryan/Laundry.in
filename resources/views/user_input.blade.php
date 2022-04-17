@@ -76,7 +76,7 @@
   <legend class="checkbox-group-legend">JENIS LAUNDRY</legend>
   <div class="checkbox">
     <label class="checkbox-wrapper">
-      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="1" />
+      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="Pakaian" />
       <span class="checkbox-tile">
         <span class="checkbox-icon">
           <img src="{{asset('/img/pakaian.png')}}" width="37px" height="37px">
@@ -88,7 +88,7 @@
   <br>
   <div class="checkbox">
     <label class="checkbox-wrapper">
-      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="2" />
+      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="Selimut" />
       <span class="checkbox-tile">
         <span class="checkbox-icon">
           <img src="{{asset('/img/selimut.png')}}" width="37px" height="37px">
@@ -100,7 +100,7 @@
   <br>
   <div class="checkbox">
     <label class="checkbox-wrapper">
-      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="3" />
+      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="Sprei" />
       <span class="checkbox-tile">
         <span class="checkbox-icon">
             <img src="{{asset('/img/sprei.png')}}" width="37px" height="37px">
@@ -112,7 +112,7 @@
   <br>
   <div class="checkbox">
     <label class="checkbox-wrapper">
-      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="4" />
+      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="Gorden" />
       <span class="checkbox-tile">
         <span class="checkbox-icon">
         <img src="{{asset('/img/gorden.png')}}" width="37px" height="37px">
@@ -124,7 +124,7 @@
   <br>
   <div class="checkbox">
     <label class="checkbox-wrapper">
-      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="5" />
+      <input type="checkbox" class="checkbox-input" id="jenis_laundry" name="jenis_laundry" value="Karpet" />
       <span class="checkbox-tile">
         <span class="checkbox-icon">
         <img src="{{asset('/img/carpet.png')}}" width="37px" height="37px">
@@ -137,9 +137,9 @@
 <br>
 <div class="checkbox-group">
 <legend class="checkbox-group-legend">JENIS SERVICE</legend>
-<input type="radio" class="btn-check" name="service" id="express" value="2" autocomplete="off">
+<input type="radio" class="btn-check" name="service" id="express" value="Express" autocomplete="off">
 <label class="btn btn-success" for="express">Express</label>
-<input type="radio" class="btn-check" name="service" id="non-express" value="1" autocomplete="off">
+<input type="radio" class="btn-check" name="service" id="non-express" value="Non Express" autocomplete="off">
 <label class="btn btn-danger" for="non-express">Non Express</label>
 </div>
 

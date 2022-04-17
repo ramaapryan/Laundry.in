@@ -196,7 +196,7 @@
                 <li class="nav-item {{ Route::currentRouteName('petugas') == 'petugas'  ? 'active' : '' }}">
                     <a href="{{ route('petugas') }}">
                         <i class="pe-7s-note2"></i>
-                        <p>Jadwal Angkut Sampah</p>
+                        <p>Jadwal Angkut Laundry</p>
                     </a>
                 </li>
                 @elseif (Auth()->user()->level=='user')
@@ -210,13 +210,13 @@
                     {{-- <li> --}}
                         <a href="{{ route('user') }}">
                             <i class="pe-7s-user"></i>
-                            <p>Daftar TPS</p>
+                            <p>Daftar Outlet Laundry</p>
                         </a>
                     </li>
                     <li class="nav-item {{ Route::currentRouteName('user-jadwal') == 'user-jadwal'  ? 'active' : '' }}">
                         <a href="{{ route('user-jadwal') }}">
                             <i class="pe-7s-note2"></i>
-                            <p>Jadwal Angkut Sampah</p>
+                            <p>Jadwal Angkut Laundry</p>
                         </a>
                     </li>
                 @else
