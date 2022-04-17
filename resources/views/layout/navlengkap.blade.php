@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
     <link href="{{asset('css/animate.min.css')}}" rel="stylesheet"/>
     <link href="{{asset('css/light-bootstrap-dashboard.css?v=1.4.0')}}" rel="stylesheet"/>
@@ -27,6 +28,125 @@
   }
 
   .navbar{padding-left: 50px;}
+
+  .checkbox-hideo{
+      opacity: 0;
+  }
+
+.checkbox-group {
+    display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+  }
+  .checkbox-group > * {
+	margin: 0.5rem 0.5rem;
+  }
+  
+  .checkbox-group-legend {
+	font-size: 1.3rem;
+    font-family: sans-serif;
+	color: #9c9c9c;
+	text-align: center;
+	line-height: 1.125;
+	margin-bottom: 1.25rem;
+  }
+  
+  .checkbox-input {
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(100%);
+			clip-path: inset(100%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+    opacity: 0;
+  }
+  .checkbox-input:checked + .checkbox-tile {
+	border-color: #5cb85c;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	color: #5cb85c;
+  }
+  .checkbox-input:checked + .checkbox-tile:before {
+	transform: scale(1);
+	opacity: 1;
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+  }
+  .checkbox-input:checked + .checkbox-tile .checkbox-icon, .checkbox-input:checked + .checkbox-tile .checkbox-label {
+	color: #5cb85c;
+  }
+  .checkbox-input:focus + .checkbox-tile {
+	border-color: #5cb85c;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5fcbd;
+  }
+  .checkbox-input:focus + .checkbox-tile:before {
+	transform: scale(1);
+	opacity: 1;
+  }
+  
+  .checkbox-tile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 7rem;
+	min-height: 7rem;
+	border-radius: 0.5rem;
+	border: 2px solid #b5bfd9;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	transition: 0.15s ease;
+	cursor: pointer;
+	position: relative;
+  }
+  .checkbox-tile:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 2px solid #b5bfd9;
+	background-color: #fff;
+	border-radius: 50%;
+	top: 0.25rem;
+	left: 0.25rem;
+	opacity: 0;
+	transform: scale(0);
+	transition: 0.25s ease;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='%23FFFFFF' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72.005 104 184 48 128.005' fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='32'%3E%3C/polyline%3E%3C/svg%3E");
+	background-size: 12px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+  }
+  .checkbox-tile:hover {
+	border-color: #5cb85c;
+  }
+  .checkbox-tile:hover:before {
+	transform: scale(1);
+	opacity: 1;
+  }
+  
+  .checkbox-icon {
+	transition: 0.375s ease;
+	color: #494949;
+  }
+  .checkbox-icon svg {
+	width: 3rem;
+	height: 3rem;
+  }
+  
+  .checkbox-label {
+	color: #707070;
+	transition: 0.375s ease;
+	text-align: center;
+    font-size: smaller;
+  }
+
   </style>
   </head>
 <body>
