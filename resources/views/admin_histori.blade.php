@@ -11,14 +11,17 @@
                             </div>
                             <div class="clearfix"></div>
                             <div class="content table-responsive table-full-width">
-                                <table class="table table-condensed">
+                            <table class="table table-hover table-striped">
                                     <thead>
                                         <th>No</th>
                                     	<th>Nama</th>
                                     	<th>Alamat</th>
-                                    	<th>Berat Laundry</th>
+                                    	<th>Berat Sampah</th>
                                     	<th>Tanggal Jemput</th>
-                                    	<th>Outlet Laundry</th>
+                                    	<th>TPS</th>
+                                        <th>Total Harga</th>
+                                        <th>Satuan</th>
+                                        <th>Service</th>
                                     	<th>Status</th>
                                     </thead>
                                     <tbody>
@@ -32,12 +35,14 @@
                                         	<td>{{$data->tanggal_jemput}}</td>
                                         	<td>{{$data->nama_tps}}</td>
                                             <td>{{$data->berat_sampah*5000}}</td>
+                                            <td>{{$data->jenis_laundry}}</td>
+                                            <td>{{$data->service}}</td>
                                             @if ($data->status == 'sedang diproses')
-                                        	<td><span>Sedang diproses</span></td>
+                                        	<td><span class="label label-default">Sedang diproses</span></td>
                                             @elseif ($data->status == 'selesai')
-                                        	<td><span >Selesai</span></td>
+                                        	<td><span class="label label-success">Selesai</span></td>
                                             @else
-                                        	<td><span>Ditolak</span></td>
+                                        	<td><span class="label label-danger">Ditolak</span></td>
                                             @endif
                                         </tr>
                                         @endforeach
