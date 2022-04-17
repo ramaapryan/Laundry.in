@@ -32,11 +32,13 @@ class UserController extends Controller
 
     public function insertFormValidator(Request $request){
         $rules=[
-            'nama' => 'required|min:1|max:30',
+                    'nama' => 'required|min:1|max:30',
                     'alamat' => 'required',
                     'berat_sampah' => 'required|min:1|max:2',
                     'tanggal_jemput' => 'required',
                     'id_petugas' => 'required',
+                    'jenis_laundry' => 'required',
+                    'service' => 'required',
                     // 'status' => 'required',
         ];
         $error_message=[
@@ -57,6 +59,8 @@ class UserController extends Controller
             $data->berat_sampah = $request->berat_sampah;
             $data->tanggal_jemput = $request->tanggal_jemput;
             $data->id_petugas = $request->id_petugas;
+            $data->jenis_laundry = $request->jenis_laundry;
+            $data->service = $request->service;
             $data->save();
             $request->session()->flash('message', 'Data berhasil ditambahkan!');
             return redirect()->route('user-jadwal');
