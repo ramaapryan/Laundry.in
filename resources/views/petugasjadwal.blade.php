@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">List Penjemputan Sampah</h4>
+                        <h4 class="title">List Penjemputan Laundry</h4>
                     </div>
                     <div class="clearfix"></div>
                     <div class="content table-responsive table-full-width">
